@@ -1,0 +1,151 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main Wrapper */
+  .individual-donor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title */
+  .individual-donor h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Input Fields */
+  .individual-donor input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .individual-donor input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Image Gallery */
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .donor-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .donor-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* File Input */
+  .individual-donor input[type="file"] {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .individual-donor input[type="file"]:hover {
+    border-color: #4CAF50;
+  }
+  
+  /* Upload Button */
+  button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Popup Message */
+  .popup-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Show Popup */
+  .popup-message.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  /* Hide Popup */
+  .popup-message.hide {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .individual-donor {
+      padding: 30px;
+      width: 90%;
+    }
+  
+    .donor-image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  

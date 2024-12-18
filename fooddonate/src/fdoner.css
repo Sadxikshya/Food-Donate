@@ -1,0 +1,103 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Donor Profile Page */
+  .donor-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .donor-profile h2 {
+    font-size: 2.2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  /* Donor Option Container */
+  .donor-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 30px;
+  }
+  
+  .donor-option {
+    text-align: center;
+    cursor: pointer;
+    width: 220px; /* Fixed width for consistency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .donor-option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .donor-option img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .donor-option img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Button Styling */
+  .donor-option button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .donor-option button:hover {
+    background-color: #45a049;
+  }
+  
+  .donor-option button:active {
+    background-color: #388e3c;
+  }
+  
+  /* Responsive design for small screens */
+  @media screen and (max-width: 768px) {
+    .donor-options {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .donor-option {
+      width: 80%; /* Full width on smaller screens */
+      margin-bottom: 20px;
+    }
+  }
+  

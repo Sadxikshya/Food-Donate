@@ -1,0 +1,122 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Donor Profile Container */
+  .donor-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    
+    font-family: 'Poppins', sans-serif; /* Trendy font */
+  }
+  
+  .donor-profile h2 {
+    font-size: 30px; /* Increased font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  /* Donor Options Container */
+  .donor-options {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjusted width to fit the screen more comfortably */
+    max-width: 1000px; /* Reduced max-width for a cleaner look */
+    gap: 10px; /* Slightly reduced gap for balance */
+    flex-wrap: wrap; /* Allows flexibility if needed */
+    padding: 20px;
+  }
+  
+  /* Individual/Restaurant Option Styling */
+  .donor-option {
+    width: 48%; /* Adjusted width to be slightly larger but still side by side */
+    height: 380px; /* Slightly increased height */
+    background: linear-gradient(135deg, #aec3e4, #c2e9fb); /* Cool gradient background */
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box; /* Include padding and border in the width/height calculation */
+  }
+  
+  /* Hover Effects for Options */
+  .donor-option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .donor-option img {
+    width: 100%;
+    height: 250px; /* Adjusted image height */
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .donor-option:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Button Styling */
+  .donor-option button {
+    padding: 16px 32px; /* Adjusted padding to fit the bigger boxes */
+    background-color: #7183e8;
+    color: white;
+    border: none;
+    font-size: 18px; /* Slightly larger font size */
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px; /* Increased margin for spacing */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover Effects for Button */
+  .donor-option button:hover {
+    background-color: #304ffe;
+    transform: translateY(-3px);
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .donor-options {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .donor-option {
+      width: 90%; /* Full width on smaller screens */
+      height: auto; /* Auto height for flexibility */
+      margin-bottom: 20px;
+    }
+  
+    .donor-option img {
+      height: 270px; /* Slightly taller images on smaller screens */
+    }
+  
+    .donor-option button {
+      font-size: 18px; /* Adjust button font size for mobile */
+      padding: 16px 32px; /* Adjust padding */
+    }
+  }
+  
